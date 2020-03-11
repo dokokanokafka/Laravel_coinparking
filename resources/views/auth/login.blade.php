@@ -8,7 +8,7 @@
       <div class="col-lg-12 text-center">
       <h2 class="section-heading">コインパーキング料金計算</h2>
         <br>
-        <h4 class="section-subheading text-muted">駐車場のない、小さなお店で一生懸命接客する皆様へ。<br>登録したコインパーキングから、まとめて料金計算ができます。</h4>
+        <h4 class="section-subheading text-muted">登録したコインパーキングから、まとめて料金計算ができます。</h4>
         <h3 class="section-subheading text-muted">How to use?</h3>
      </div>
     </div>
