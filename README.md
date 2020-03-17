@@ -1,78 +1,66 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+## コインパーキング料金計算
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+コインパーキングを登録、時間の範囲を選択すると計算することができます。
 
-## About Laravel
+## リンク
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+https://coinparking-price-calculation.com
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+会員登録が不要の、専用ログインフォームを設けております。
+是非ご操作ください。
+※以下のログイン情報は予め入力されております。
+ID:dokokanokafka@gmail.com PW:kyoto2020
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 使用方法
 
-## Learning Laravel FIX!!
+1.ログインをお願いします。
+2.コインパーキング登録をしてください。
+  ※予めデモデータが入力されております。
+  ・コインパーキングの名称、30分料金、メモを登録してください。
+  ・登録されると一覧表示されます。
+  ・後から登録内容の修正及び削除も可能です。
+3.時間計算をしてください。
+  ・計算したい期間を「いつから」「いつまで」を選択し
+    「この条件で料金検索」ボタンをクリックしてください。
+    計算結果は登録一覧に表示されるようになります。
+  
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 使用技術
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+・PHP 7.3
+・Laravel 6
+・MySQL 8 (MySQL Workbench)
+・MAMP(Local開発)
+・AWS
+  -Lightsail(LAMP Stack)
+  -Route53
+  -IAM
+  -CloudWatch
+・Github
+・Trello
 
-## Laravel Sponsors
+## 機能一覧
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+・ログイン機能
+・CRUD機能
+・時間料金計算(Carbon)
+・バリデーション機能(コインパーキング登録、時間計算)
+・SSL化(Let`'s encrypt/Lego Client)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+## 開発した背景
 
-## Contributing
+私が在住している京都市の中心部は土地が狭く、現業で勤めているホテルは専用駐車場はない事情がございます。
+もし、各地域から車でいらっしゃったお客様に対しては、
+外部にあるコインパーキングをご案内しております。
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+京都市内は小型のコインパーキングが多く点在しているという特徴があり、チェックアウトまでの間コインパーキングを利用すると、時間料金がいくらになるか、お客様から唐突に問い合わせがある事がございました。
+その際に、迅速にお答えできる方法はないだろうかと考えたのが
+今回開発に至った背景となります。
 
-## Code of Conduct
+本アプリケーションでは、個人使用で利用可能性のある
+コインパーキングを各自登録するという設計で開発いたしましたが、
+管理側がデータを登録及び公開し、一般ユーザーが利用するような
+アプリケーションとして展開できる可能性はあると考えます。
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+大手のコインパーキングのみ、満車や時間料金の確認が行えるアプリケーションはありますが、全てのコインパーキングの料金を一覧で確認できるプラットフォームが現状はない認識です。
+その為、ユーザー側としては十分に需要のある情報になりえると思っております。
