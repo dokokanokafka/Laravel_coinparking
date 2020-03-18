@@ -23,7 +23,7 @@ ID:`dokokanokafka@gmail.com` PW:kyoto2020
 &emsp;・後から登録内容の修正及び削除も可能です。  
 
 3.時間計算をしてください。  
-&emsp;・計算したい期間を「いつから」「いつまで」を選択し  
+&emsp;・「いつから」「いつまで」の計算したい期間をプルダウンから選択し  
 &emsp;&emsp;「この条件で料金検索」ボタンをクリックしてください。  
 &emsp;・計算結果は登録一覧に表示されるようになります。  
   
@@ -50,7 +50,7 @@ ID:`dokokanokafka@gmail.com` PW:kyoto2020
 - CRUD機能  
 - 時間料金計算(Carbon)  
 - バリデーション機能(コインパーキング登録、時間計算)  
-- SSL化(Let`s encrypt/Lego Client)  
+- SSL化(Let`s encrypt&nbsp;/&nbsp;Lego Client)  
 
 ## 開発した背景
 
