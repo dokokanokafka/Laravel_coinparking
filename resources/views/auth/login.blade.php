@@ -32,7 +32,7 @@
         <h4 class="service-heading">Step2<br><br>
         <img class="logo" src="{{ asset('image/car.png') }}" alt="logo" width=50><br>
         <br>コインパーキング登録</h4>
-        <p class="text-muted">コインパーキングの情報を登録してください。15分毎の料金だけでなく、自分用のメモもできます。<br>もちろん後から修正や削除もできます。</p>
+        <p class="text-muted">コインパーキングの情報を登録してください。30分毎の料金だけでなく、自分用のメモもできます。<br>もちろん後から修正や削除もできます。</p>
       </div>
       <div class="col-md-4">
         <span class="fa-stack fa-4x">
