@@ -7,8 +7,8 @@
 
 https://coinparking-price-calculation.com
 
-会員登録が不要の専用ログインフォームを設けております。
-是非ご操作ください。  
+**会員登録が不要の専用ログインフォームを設けております。
+是非ご操作ください。**  
 ※以下のログイン情報は予め入力されております。  
 ID:`dokokanokafka@gmail.com` PW:kyoto2020  
 
