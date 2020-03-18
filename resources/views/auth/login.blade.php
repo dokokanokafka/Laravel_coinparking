@@ -102,7 +102,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('ログイン') }}</div>
+                <div class="card-header">{{ __('ログイン 又は 新規登録') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
@@ -158,6 +158,11 @@
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{ __('お忘れの場合') }}
                                     </a>
+                                @endif
+                                @if (Route::has('password.request'))
+                                <a class="btn btn-secondary" href="{{ route('register') }}" role="button">
+                                    {{ __('新規登録') }}
+                                </a>
                                 @endif
                             </div>
                         </div>
