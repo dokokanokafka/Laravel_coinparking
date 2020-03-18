@@ -46,7 +46,7 @@ ID:`dokokanokafka@gmail.com` PW:kyoto2020
 
 ## 機能一覧
 
-- ログイン機能  
+- 会員登録、ログイン機能  
 - CRUD機能  
 - 時間料金計算(Carbon)  
 - バリデーション機能(コインパーキング登録、時間計算)  
